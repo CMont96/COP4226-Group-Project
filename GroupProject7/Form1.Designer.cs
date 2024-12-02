@@ -140,6 +140,7 @@
             this.buttonReport.TabIndex = 18;
             this.buttonReport.Text = "Report";
             this.buttonReport.UseVisualStyleBackColor = true;
+            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
             // 
             // groupBox1
             // 

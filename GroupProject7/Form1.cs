@@ -47,5 +47,11 @@ namespace GroupProject7
             
             newShoppingCart.Show();
         }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            ReportsForm reportsForm = new ReportsForm();
+            reportsForm.ShowDialog();
+        }
     }
 }

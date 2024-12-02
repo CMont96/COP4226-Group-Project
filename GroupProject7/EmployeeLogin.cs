@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using GroupProject7.DataDirectory;
 
 namespace GroupProject7
 {
@@ -41,7 +42,9 @@ namespace GroupProject7
             }
 
             //connect the string to the database
-            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename=C:\USERS\MAREL\DOWNLOADS\GROUPPROJECT7\GROUPPROJECT7\GROUPPROJECT7\BIN\DEBUG\DATADIRECTORY\BOOKSTORE.MDF;Integrated Security=True;Connect Timeout=30;";
+            //string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename=C:\USERS\MAREL\DOWNLOADS\GROUPPROJECT7\GROUPPROJECT7\GROUPPROJECT7\BIN\DEBUG\DATADIRECTORY\BOOKSTORE.MDF;Integrated Security=True;Connect Timeout=30;";
+            DataAccess dataAccess = new DataAccess();
+            string connectionString = dataAccess.GetConnectionString();
 
             try
             {
