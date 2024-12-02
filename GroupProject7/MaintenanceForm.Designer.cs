@@ -129,6 +129,7 @@
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(300, 26);
             this.textBoxSearch.TabIndex = 3;
+            this.textBoxSearch.Text = "Search By Id";
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
             // groupBox1
@@ -215,6 +216,7 @@
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
             this.Name = "MaintenanceForm";

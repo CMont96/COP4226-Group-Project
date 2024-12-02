@@ -22,7 +22,6 @@ namespace GroupProject7
             da = new DataAccess();
             titles = da.FindTitles();
             LoadData();
-            //UpdateDataGridSource();
         }
 
         private void LoadData()
@@ -75,7 +74,6 @@ namespace GroupProject7
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            // open edit form and pass the title object to the form.
             // In the form, make the call to save the edit object.
             if (dataGridView1.SelectedCells.Count > 0)
             {

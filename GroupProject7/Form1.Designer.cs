@@ -55,15 +55,14 @@
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip.Size = new System.Drawing.Size(490, 24);
+            this.menuStrip.Size = new System.Drawing.Size(735, 24);
             this.menuStrip.TabIndex = 13;
             this.menuStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // manageToolStripMenuItem
@@ -71,7 +70,7 @@
             this.manageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.maintenanceToolStripMenuItem});
             this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
-            this.manageToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
+            this.manageToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.manageToolStripMenuItem.Text = "Manage";
             // 
             // maintenanceToolStripMenuItem
@@ -84,21 +83,20 @@
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(8, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 20);
             this.label1.TabIndex = 14;
@@ -108,8 +106,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(31, 81);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(46, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 17);
             this.label2.TabIndex = 15;
@@ -117,10 +114,9 @@
             // 
             // buttonMaintenance
             // 
-            this.buttonMaintenance.Location = new System.Drawing.Point(34, 114);
-            this.buttonMaintenance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonMaintenance.Location = new System.Drawing.Point(51, 175);
             this.buttonMaintenance.Name = "buttonMaintenance";
-            this.buttonMaintenance.Size = new System.Drawing.Size(100, 49);
+            this.buttonMaintenance.Size = new System.Drawing.Size(150, 75);
             this.buttonMaintenance.TabIndex = 16;
             this.buttonMaintenance.Text = "Maintenance";
             this.buttonMaintenance.UseVisualStyleBackColor = true;
@@ -128,10 +124,9 @@
             // 
             // buttonShoppingCart
             // 
-            this.buttonShoppingCart.Location = new System.Drawing.Point(181, 114);
-            this.buttonShoppingCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonShoppingCart.Location = new System.Drawing.Point(272, 175);
             this.buttonShoppingCart.Name = "buttonShoppingCart";
-            this.buttonShoppingCart.Size = new System.Drawing.Size(100, 49);
+            this.buttonShoppingCart.Size = new System.Drawing.Size(150, 75);
             this.buttonShoppingCart.TabIndex = 17;
             this.buttonShoppingCart.Text = "Shopping Cart";
             this.buttonShoppingCart.UseVisualStyleBackColor = true;
@@ -139,10 +134,9 @@
             // 
             // buttonReport
             // 
-            this.buttonReport.Location = new System.Drawing.Point(339, 114);
-            this.buttonReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonReport.Location = new System.Drawing.Point(508, 175);
             this.buttonReport.Name = "buttonReport";
-            this.buttonReport.Size = new System.Drawing.Size(100, 49);
+            this.buttonReport.Size = new System.Drawing.Size(150, 75);
             this.buttonReport.TabIndex = 18;
             this.buttonReport.Text = "Report";
             this.buttonReport.UseVisualStyleBackColor = true;
@@ -150,11 +144,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(11, 192);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(16, 295);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(457, 65);
+            this.groupBox1.Size = new System.Drawing.Size(686, 100);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Recent Activity";
@@ -162,19 +154,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 27);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(18, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 13);
+            this.label3.Size = new System.Drawing.Size(202, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "*A New Order Was Created";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(490, 322);
+            this.ClientSize = new System.Drawing.Size(735, 495);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonReport);
             this.Controls.Add(this.buttonShoppingCart);
@@ -182,7 +173,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
