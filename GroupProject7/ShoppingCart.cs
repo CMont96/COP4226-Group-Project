@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,14 +35,30 @@ namespace GroupProject7
             txtQuantity1.Text = qtyOne.ToString();
             txtPrice1.Text = priceOne.ToString("c");
             //Input for item two
-            string bookTwo = "This is the second Item";
-            int qtyTwo = 20;
-            decimal priceTwo = 200.00m;
-            txtItemName1.Text = bookTwo;
-            txtQuantity1.Text = qtyTwo.ToString();
-            txtPrice1.Text = priceTwo.ToString("c");
+            /* string bookTwo = "This is the second Item";
+             int qtyTwo = 20;
+             decimal priceTwo = 200.00m;
+             txtItemName2.Text = bookTwo;
+             txtQuantity2.Text = qtyTwo.ToString();
+            txtPrice2.Text = priceTwo.ToString("c");
+            */
 
+            //Input item two -- exeception handling .
+            try
+            {
+                string bookTwo = "This is the second Item";
+                int qtyTwo = 20;
+                decimal priceTwo = 200.00m;
+                txtItemName2.Text = bookTwo;
+                txtQuantity2.Text = qtyTwo.ToString();
+                txtPrice2.Text = priceTwo.ToString("C");
 
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("There is a error in your entry !");
+            }
         }
     }
 }

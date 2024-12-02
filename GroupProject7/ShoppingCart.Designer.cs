@@ -49,9 +49,9 @@
             this.txtItemName1 = new System.Windows.Forms.TextBox();
             this.txtPrice1 = new System.Windows.Forms.TextBox();
             this.txtQuantity1 = new System.Windows.Forms.TextBox();
-            this.txtQunatity2 = new System.Windows.Forms.TextBox();
+            this.txtQuantity2 = new System.Windows.Forms.TextBox();
             this.txtPrice2 = new System.Windows.Forms.TextBox();
-            this.txtItem2 = new System.Windows.Forms.TextBox();
+            this.txtItemName2 = new System.Windows.Forms.TextBox();
             this.chkItem2 = new System.Windows.Forms.CheckBox();
             this.mnuShoppingCart.SuspendLayout();
             this.SuspendLayout();
@@ -224,7 +224,7 @@
             // txtPrice1
             // 
             this.txtPrice1.Location = new System.Drawing.Point(148, 140);
-            this.txtPrice1.MaxLength = 2;
+            this.txtPrice1.MaxLength = 8;
             this.txtPrice1.Name = "txtPrice1";
             this.txtPrice1.Size = new System.Drawing.Size(44, 20);
             this.txtPrice1.TabIndex = 15;
@@ -232,34 +232,34 @@
             // txtQuantity1
             // 
             this.txtQuantity1.Location = new System.Drawing.Point(198, 140);
-            this.txtQuantity1.MaxLength = 8;
+            this.txtQuantity1.MaxLength = 2;
             this.txtQuantity1.Name = "txtQuantity1";
             this.txtQuantity1.Size = new System.Drawing.Size(47, 20);
             this.txtQuantity1.TabIndex = 16;
             // 
-            // txtQunatity2
+            // txtQuantity2
             // 
-            this.txtQunatity2.Location = new System.Drawing.Point(198, 177);
-            this.txtQunatity2.MaxLength = 8;
-            this.txtQunatity2.Name = "txtQunatity2";
-            this.txtQunatity2.Size = new System.Drawing.Size(47, 20);
-            this.txtQunatity2.TabIndex = 20;
+            this.txtQuantity2.Location = new System.Drawing.Point(198, 177);
+            this.txtQuantity2.MaxLength = 2;
+            this.txtQuantity2.Name = "txtQuantity2";
+            this.txtQuantity2.Size = new System.Drawing.Size(47, 20);
+            this.txtQuantity2.TabIndex = 20;
             // 
             // txtPrice2
             // 
             this.txtPrice2.Location = new System.Drawing.Point(148, 177);
-            this.txtPrice2.MaxLength = 2;
+            this.txtPrice2.MaxLength = 8;
             this.txtPrice2.Name = "txtPrice2";
             this.txtPrice2.Size = new System.Drawing.Size(44, 20);
             this.txtPrice2.TabIndex = 19;
             // 
-            // txtItem2
+            // txtItemName2
             // 
-            this.txtItem2.Location = new System.Drawing.Point(42, 177);
-            this.txtItem2.MaxLength = 80;
-            this.txtItem2.Name = "txtItem2";
-            this.txtItem2.Size = new System.Drawing.Size(100, 20);
-            this.txtItem2.TabIndex = 18;
+            this.txtItemName2.Location = new System.Drawing.Point(42, 177);
+            this.txtItemName2.MaxLength = 80;
+            this.txtItemName2.Name = "txtItemName2";
+            this.txtItemName2.Size = new System.Drawing.Size(100, 20);
+            this.txtItemName2.TabIndex = 18;
             // 
             // chkItem2
             // 
@@ -275,9 +275,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 437);
-            this.Controls.Add(this.txtQunatity2);
+            this.Controls.Add(this.txtQuantity2);
             this.Controls.Add(this.txtPrice2);
-            this.Controls.Add(this.txtItem2);
+            this.Controls.Add(this.txtItemName2);
             this.Controls.Add(this.chkItem2);
             this.Controls.Add(this.txtQuantity1);
             this.Controls.Add(this.txtPrice1);
@@ -329,9 +329,9 @@
         private System.Windows.Forms.TextBox txtItemName1;
         private System.Windows.Forms.TextBox txtPrice1;
         private System.Windows.Forms.TextBox txtQuantity1;
-        private System.Windows.Forms.TextBox txtQunatity2;
+        private System.Windows.Forms.TextBox txtQuantity2;
         private System.Windows.Forms.TextBox txtPrice2;
-        private System.Windows.Forms.TextBox txtItem2;
+        private System.Windows.Forms.TextBox txtItemName2;
         private System.Windows.Forms.CheckBox chkItem2;
     }
 }
