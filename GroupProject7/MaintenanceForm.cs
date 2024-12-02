@@ -46,7 +46,7 @@ namespace GroupProject7
 
                     if (titles != null)
                     {
-                        MessageBox.Show("Found this: " + titles.First().TitleName);
+                        //MessageBox.Show("Found this: " + titles.First().TitleName);
                         dataGridView1.DataSource = titles;
                     }
                     else MessageBox.Show("Nothing was found");
@@ -82,7 +82,7 @@ namespace GroupProject7
                 int selectedrowindex = dataGridView1.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
                 string id = Convert.ToString(selectedRow.Cells["titleId"].Value);
-                MessageBox.Show("Editing Record #" + id);
+                //MessageBox.Show("Editing Record #" + id);
                 EditForm editForm = new EditForm(id);
                 editForm.Show();
             }
