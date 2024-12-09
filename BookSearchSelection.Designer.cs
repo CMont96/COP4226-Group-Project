@@ -1,4 +1,4 @@
-﻿namespace GroupProject7
+namespace GroupProject7
 {
     partial class frmBookSearchSelection
     {
@@ -50,6 +50,7 @@
             this.dgvSearchItems.Name = "dgvSearchItems";
             this.dgvSearchItems.Size = new System.Drawing.Size(612, 196);
             this.dgvSearchItems.TabIndex = 1;
+            this.dgvSearchItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSearchItems_CellContentClick);
             // 
             // frmBookSearchSelection
             // 
