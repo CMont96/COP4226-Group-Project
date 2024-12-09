@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +12,7 @@ namespace GroupProject7
 {
     public partial class frmBookSearchSelection : Form
     {
-        private frmShoppingCart shoppingCartItem; 
+        private frmShoppingCart shoppingCartItem;
         public frmBookSearchSelection(frmShoppingCart shoppingCartItem)
         {
             InitializeComponent();
@@ -31,9 +31,10 @@ namespace GroupProject7
 
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            shoppingCartItem = new frmShoppingCart();
+          
             if (dgvSearchItems.SelectedRows.Count > 0)
             {
+
                 DataGridViewRow selectedRow = dgvSearchItems.SelectedRows[0];
                 // Get the DataRow from the selected row
                 DataRowView dataRowView = (DataRowView)selectedRow.DataBoundItem;
@@ -42,6 +43,11 @@ namespace GroupProject7
 
                 MessageBox.Show("Item added to cart.");
             }
+        }
+
+        private void dgvSearchItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
