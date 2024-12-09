@@ -1,4 +1,4 @@
-﻿namespace GroupProject7
+namespace GroupProject7
 {
     partial class frmShoppingCart
     {
@@ -31,13 +31,13 @@
             this.txtOrderNumber = new System.Windows.Forms.TextBox();
             this.lblOrderNumber = new System.Windows.Forms.Label();
             this.lblOrderInformation = new System.Windows.Forms.Label();
-            this.txtSearchParts = new System.Windows.Forms.TextBox();
+            this.txtSearchItems = new System.Windows.Forms.TextBox();
             this.mnuShoppingCart = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAddItem = new System.Windows.Forms.Button();
+            this.btnRemoveItem = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.txtSubTotal = new System.Windows.Forms.TextBox();
             this.lblSubTotal = new System.Windows.Forms.Label();
@@ -45,15 +45,10 @@
             this.txtTax = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
-            this.chkItem1 = new System.Windows.Forms.CheckBox();
-            this.txtItemName1 = new System.Windows.Forms.TextBox();
-            this.txtPrice1 = new System.Windows.Forms.TextBox();
-            this.txtQuantity1 = new System.Windows.Forms.TextBox();
-            this.txtQuantity2 = new System.Windows.Forms.TextBox();
-            this.txtPrice2 = new System.Windows.Forms.TextBox();
-            this.txtItemName2 = new System.Windows.Forms.TextBox();
-            this.chkItem2 = new System.Windows.Forms.CheckBox();
+            this.btnSearchEnter = new System.Windows.Forms.Button();
+            this.dgvShoppingCart = new System.Windows.Forms.DataGridView();
             this.mnuShoppingCart.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvShoppingCart)).BeginInit();
             this.SuspendLayout();
             // 
             // txtOrderNumber
@@ -86,13 +81,13 @@
             this.lblOrderInformation.TabIndex = 2;
             this.lblOrderInformation.Text = "Order Information:";
             // 
-            // txtSearchParts
+            // txtSearchItems
             // 
-            this.txtSearchParts.AccessibleDescription = "Search ";
-            this.txtSearchParts.Location = new System.Drawing.Point(524, 27);
-            this.txtSearchParts.Name = "txtSearchParts";
-            this.txtSearchParts.Size = new System.Drawing.Size(100, 20);
-            this.txtSearchParts.TabIndex = 3;
+            this.txtSearchItems.AccessibleDescription = "Search ";
+            this.txtSearchItems.Location = new System.Drawing.Point(524, 27);
+            this.txtSearchItems.Name = "txtSearchItems";
+            this.txtSearchItems.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchItems.TabIndex = 3;
             // 
             // mnuShoppingCart
             // 
@@ -131,15 +126,16 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
-            // btnAddItem
+            // btnRemoveItem
             // 
-            this.btnAddItem.Location = new System.Drawing.Point(122, 381);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(90, 44);
-            this.btnAddItem.TabIndex = 5;
-            this.btnAddItem.Text = "Add Item";
-            this.btnAddItem.UseVisualStyleBackColor = true;
-            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
+            this.btnRemoveItem.AutoEllipsis = true;
+            this.btnRemoveItem.Location = new System.Drawing.Point(122, 381);
+            this.btnRemoveItem.Name = "btnRemoveItem";
+            this.btnRemoveItem.Size = new System.Drawing.Size(90, 44);
+            this.btnRemoveItem.TabIndex = 5;
+            this.btnRemoveItem.Text = "Remove Item";
+            this.btnRemoveItem.UseVisualStyleBackColor = true;
+            this.btnRemoveItem.Click += new System.EventHandler(this.btnRemoveItem_Click);
             // 
             // btnSubmit
             // 
@@ -204,85 +200,31 @@
             this.txtTotal.Size = new System.Drawing.Size(100, 16);
             this.txtTotal.TabIndex = 11;
             // 
-            // chkItem1
+            // btnSearchEnter
             // 
-            this.chkItem1.AutoSize = true;
-            this.chkItem1.Location = new System.Drawing.Point(21, 143);
-            this.chkItem1.Name = "chkItem1";
-            this.chkItem1.Size = new System.Drawing.Size(15, 14);
-            this.chkItem1.TabIndex = 13;
-            this.chkItem1.UseVisualStyleBackColor = true;
+            this.btnSearchEnter.Location = new System.Drawing.Point(549, 53);
+            this.btnSearchEnter.Name = "btnSearchEnter";
+            this.btnSearchEnter.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchEnter.TabIndex = 21;
+            this.btnSearchEnter.Text = "Search";
+            this.btnSearchEnter.UseVisualStyleBackColor = true;
+            this.btnSearchEnter.Click += new System.EventHandler(this.btnSearchEnter_Click);
             // 
-            // txtItemName1
+            // dgvShoppingCart
             // 
-            this.txtItemName1.Location = new System.Drawing.Point(42, 140);
-            this.txtItemName1.MaxLength = 80;
-            this.txtItemName1.Name = "txtItemName1";
-            this.txtItemName1.Size = new System.Drawing.Size(100, 20);
-            this.txtItemName1.TabIndex = 14;
-            // 
-            // txtPrice1
-            // 
-            this.txtPrice1.Location = new System.Drawing.Point(148, 140);
-            this.txtPrice1.MaxLength = 8;
-            this.txtPrice1.Name = "txtPrice1";
-            this.txtPrice1.Size = new System.Drawing.Size(44, 20);
-            this.txtPrice1.TabIndex = 15;
-            // 
-            // txtQuantity1
-            // 
-            this.txtQuantity1.Location = new System.Drawing.Point(198, 140);
-            this.txtQuantity1.MaxLength = 2;
-            this.txtQuantity1.Name = "txtQuantity1";
-            this.txtQuantity1.Size = new System.Drawing.Size(47, 20);
-            this.txtQuantity1.TabIndex = 16;
-            // 
-            // txtQuantity2
-            // 
-            this.txtQuantity2.Location = new System.Drawing.Point(198, 177);
-            this.txtQuantity2.MaxLength = 2;
-            this.txtQuantity2.Name = "txtQuantity2";
-            this.txtQuantity2.Size = new System.Drawing.Size(47, 20);
-            this.txtQuantity2.TabIndex = 20;
-            // 
-            // txtPrice2
-            // 
-            this.txtPrice2.Location = new System.Drawing.Point(148, 177);
-            this.txtPrice2.MaxLength = 8;
-            this.txtPrice2.Name = "txtPrice2";
-            this.txtPrice2.Size = new System.Drawing.Size(44, 20);
-            this.txtPrice2.TabIndex = 19;
-            // 
-            // txtItemName2
-            // 
-            this.txtItemName2.Location = new System.Drawing.Point(42, 177);
-            this.txtItemName2.MaxLength = 80;
-            this.txtItemName2.Name = "txtItemName2";
-            this.txtItemName2.Size = new System.Drawing.Size(100, 20);
-            this.txtItemName2.TabIndex = 18;
-            // 
-            // chkItem2
-            // 
-            this.chkItem2.AutoSize = true;
-            this.chkItem2.Location = new System.Drawing.Point(21, 180);
-            this.chkItem2.Name = "chkItem2";
-            this.chkItem2.Size = new System.Drawing.Size(15, 14);
-            this.chkItem2.TabIndex = 17;
-            this.chkItem2.UseVisualStyleBackColor = true;
+            this.dgvShoppingCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvShoppingCart.Location = new System.Drawing.Point(36, 116);
+            this.dgvShoppingCart.Name = "dgvShoppingCart";
+            this.dgvShoppingCart.Size = new System.Drawing.Size(373, 150);
+            this.dgvShoppingCart.TabIndex = 22;
             // 
             // frmShoppingCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 437);
-            this.Controls.Add(this.txtQuantity2);
-            this.Controls.Add(this.txtPrice2);
-            this.Controls.Add(this.txtItemName2);
-            this.Controls.Add(this.chkItem2);
-            this.Controls.Add(this.txtQuantity1);
-            this.Controls.Add(this.txtPrice1);
-            this.Controls.Add(this.txtItemName1);
-            this.Controls.Add(this.chkItem1);
+            this.Controls.Add(this.dgvShoppingCart);
+            this.Controls.Add(this.btnSearchEnter);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.lblTax);
@@ -290,8 +232,8 @@
             this.Controls.Add(this.lblSubTotal);
             this.Controls.Add(this.txtSubTotal);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.btnAddItem);
-            this.Controls.Add(this.txtSearchParts);
+            this.Controls.Add(this.btnRemoveItem);
+            this.Controls.Add(this.txtSearchItems);
             this.Controls.Add(this.lblOrderInformation);
             this.Controls.Add(this.lblOrderNumber);
             this.Controls.Add(this.txtOrderNumber);
@@ -301,6 +243,7 @@
             this.Text = "Shopping Cart";
             this.mnuShoppingCart.ResumeLayout(false);
             this.mnuShoppingCart.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvShoppingCart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,13 +254,13 @@
         private System.Windows.Forms.TextBox txtOrderNumber;
         private System.Windows.Forms.Label lblOrderNumber;
         private System.Windows.Forms.Label lblOrderInformation;
-        private System.Windows.Forms.TextBox txtSearchParts;
+        private System.Windows.Forms.TextBox txtSearchItems;
         private System.Windows.Forms.MenuStrip mnuShoppingCart;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.Button btnAddItem;
+        private System.Windows.Forms.Button btnRemoveItem;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.TextBox txtSubTotal;
         private System.Windows.Forms.Label lblSubTotal;
@@ -325,13 +268,7 @@
         private System.Windows.Forms.TextBox txtTax;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.TextBox txtTotal;
-        private System.Windows.Forms.CheckBox chkItem1;
-        private System.Windows.Forms.TextBox txtItemName1;
-        private System.Windows.Forms.TextBox txtPrice1;
-        private System.Windows.Forms.TextBox txtQuantity1;
-        private System.Windows.Forms.TextBox txtQuantity2;
-        private System.Windows.Forms.TextBox txtPrice2;
-        private System.Windows.Forms.TextBox txtItemName2;
-        private System.Windows.Forms.CheckBox chkItem2;
+        private System.Windows.Forms.Button btnSearchEnter;
+        private System.Windows.Forms.DataGridView dgvShoppingCart;
     }
 }
